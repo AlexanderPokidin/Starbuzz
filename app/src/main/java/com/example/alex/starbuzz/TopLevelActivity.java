@@ -24,6 +24,6 @@ public class TopLevelActivity extends Activity {
         };
 
         ListView listView = (ListView) findViewById(R.id.list_options);
-        ListView.setOnItemClickListener(itemClickListener);
+        listView.setOnItemClickListener(itemClickListener);
     }
 }

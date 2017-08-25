@@ -72,6 +72,7 @@ public class TopLevelActivity extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
+        // Update the Cursor
         try {
             StarbuzzDatabaseHelper starbuzzDatabaseHelper = new StarbuzzDatabaseHelper(this);
             db = starbuzzDatabaseHelper.getReadableDatabase();
